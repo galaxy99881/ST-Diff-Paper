@@ -1,0 +1,22 @@
+# Configuration for Stage 1: Unconditional Pretraining
+
+base_model: "runwayml/stable-diffusion-v1-5"
+
+data:
+  unlabeled_dir: "data/unlabeled/images"
+  image_size: 512
+
+training:
+  batch_size: 4
+  epochs: 10
+  lr: 1e-5
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  num_workers: 4
+  save_interval: 2
+
+logging:
+  log_interval: 100
+
+experiment_name: "pretrain_stage1"
+

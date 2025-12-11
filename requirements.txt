@@ -1,0 +1,43 @@
+# Core Dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+
+# ControlNet and CLIP
+controlnet-aux>=0.3.0
+clip-by-openai
+
+# LoRA
+peft>=0.4.0
+
+# Image Processing
+Pillow>=9.5.0
+opencv-python>=4.7.0
+scikit-image>=0.20.0
+
+# Evaluation Metrics
+lpips>=0.1.4
+pytorch-fid>=0.3.0
+scikit-learn>=1.2.0
+
+# Data Handling
+numpy>=1.24.0
+pandas>=2.0.0
+h5py>=3.8.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tensorboard>=2.13.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+wandb>=0.15.0
+
+# Medical Imaging (optional)
+pydicom>=2.3.0
+nibabel>=5.1.0
+

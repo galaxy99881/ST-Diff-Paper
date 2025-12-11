@@ -1,0 +1,22 @@
+# Configuration for Stage 2: Multi-Condition Fine-tuning
+
+base_model: "runwayml/stable-diffusion-v1-5"
+
+data:
+  labeled_dir: "data/labeled"
+  image_size: 512
+
+training:
+  batch_size: 2
+  epochs: 20
+  lr: 5e-6
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  num_workers: 4
+  save_interval: 5
+
+logging:
+  log_interval: 50
+
+experiment_name: "finetune_stage2"
+
